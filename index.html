@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Background Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="linearGradient">
+      <div class="mainContainer">
+        <div class="container">
+          <h1 class="text1">Background Generator</h1>
+        </div>
+        <div class="optionButtons">
+            <button onclick="setTab(0)">Color Gradient</button>
+            <button onclick="setTab(1)">Image Edit</button>
+            <!-- <button onclick="setTab(2)">Tab 3</button> -->
+        </div>
+        <div class="tabPanel">
+          <div class="container2">
+                <input type="color" name="color1" class="color1" value="#330000" />
+                <input type="color" name="color2" class="color2" value="#0a0a0" />
+                <div class="setDirection">
+                    <button onclick="setDir('to bottom')">Top to Bottom</button>
+                    <button onclick="setDir('to right')">Left to Right</button>
+                </div>
+                <h3>Current CSS Background</h3>
+                <h4 id="currentCss">Current css through js</h4>
+                <input id='copyText' type="text" name="">
+                <div class="clipBoard" onclick="clickToCopy()">Copy to clipboard</div>
+          </div>
+        </div>
+          <div class="tabPanel"> 
+                  <div class="container3">
+                    <label>Enter your Image URL</label>
+                    <div class="urlBox">
+                        <input id="imageURL" type="text" name="imageURL" />
+                        <button id="enterURL" >Enter URL</button>
+                    </div>
+                  </div>
+
+
+
+          </div>
+          <div class="tabPanel"> Div 3 </div>
+        </div>
+      </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
